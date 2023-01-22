@@ -27,7 +27,9 @@ steps:
 - task: Npm@1
   inputs:
     command: 'build'
+    workingDir: '/actionsdemos/calculator'
 
 - task: Npm@1
   inputs:
     command: 'test'
+    workingDir: '/actionsdemos/calculator'
